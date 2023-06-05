@@ -1,3 +1,5 @@
+# TutorLink - front
+
 # VscodeExtention
 
 - 필수
@@ -32,6 +34,12 @@
   <br/>
 
 # 안건
+
+- 개발환경 맞추기(Eslint, Prettier)
+- 디렉토리 구조
+- 브랜치 컨벤션
+- Issue 사용
+- PR Merge 방식
 
 ## 기술
 
