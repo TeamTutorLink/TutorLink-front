@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
   return (
-    <footer>
+    <StyledFooter>
       <div>
         <ul>
           <li>2023</li>
@@ -19,11 +19,25 @@ const Footer = () => {
           <option value="">호준</option>
         </select>
       </div>
-      <div>
+      <StyledCopyright>
         <div>© 2023 TutorLink from TutorLinkTeam</div>
-      </div>
-    </footer>
+      </StyledCopyright>
+    </StyledFooter>
   );
 };
+const StyledFooter = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #ececec;
+  padding: 40px 0 80px;
+  margin: 0 auto;
+`;
+const StyledCopyright = styled(StyledFooter)`
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 50px 0;
+  font-size: 14px;
+`;
 
 export default Footer;
