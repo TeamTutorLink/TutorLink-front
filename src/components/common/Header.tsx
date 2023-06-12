@@ -1,5 +1,6 @@
 import React from 'react';
 import SymbolLogo from '../../assets/SymbolLogo';
+import styled from 'styled-components';
 
 const Header = () => {
   return (
