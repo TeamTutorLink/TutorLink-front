@@ -20,13 +20,14 @@ const Header = () => {
   );
 };
 
+// 민트 - #0cdcbf / 남색 - #0e0171
 const StyledHeaderContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
   padding: 20px 0 0;
+  border-bottom: 1px solid #ececec;
 `;
-// 민트 - #0cdcbf / 남색 - #0e0171
 const StyledSearchBar = styled.div`
   width: 30%;
   height: 35px;
