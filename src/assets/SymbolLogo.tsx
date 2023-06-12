@@ -14,8 +14,8 @@ const SymbolLogo = () => {
 const StyledLogo = styled.div`
   cursor: pointer;
   img {
-    width: 300px;
-    height: 54px;
+    width: 250px;
+    height: 40px;
   }
 `;
 export default SymbolLogo;
