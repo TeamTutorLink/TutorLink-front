@@ -1,5 +1,7 @@
 import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
+import React from 'react';
+import styled from 'styled-components';
 
 const MainPage = () => {
   return (
