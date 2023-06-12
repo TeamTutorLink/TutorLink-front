@@ -1,11 +1,13 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import SymbolLogo from '../../assets/SymbolLogo';
 import styled from 'styled-components';
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <StyledHeaderContainer>
-      <div role="button">
+      <div role="button" onClick={() => navigate('/')}>
         <SymbolLogo />
       </div>
       <StyledSearchBar>
