@@ -13,8 +13,8 @@ const Symbol = () => {
 
 const StyledSymbol = styled.div`
   img {
-    width: 120;
-    height: 120px;
+    width: 60;
+    height: 60px;
   }
 `;
 export default Symbol;
