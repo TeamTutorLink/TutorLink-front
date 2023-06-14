@@ -22,7 +22,6 @@ const Header = () => {
   );
 };
 
-// 민트 - #0cdcbf / 남색 - #0e0171
 const StyledHeaderContainer = styled.div`
   position: relative;
   display: flex;
