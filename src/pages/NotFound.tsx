@@ -3,17 +3,17 @@ import Footer from '../components/common/Footer';
 import Symbol from '../assets/Symbol';
 import React from 'react';
 import styled from 'styled-components';
-import SymbolLogo from '../assets/SymbolLogo';
+import SymbolLogo_transparent from '../assets/SymbolLogo_transparent';
 import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
     <>
       <Header />
-      <StyledSymbolLogo>
-        <SymbolLogo />
-      </StyledSymbolLogo>
       <StyledContainer>
+        <StyledSymbolLogo>
+          <SymbolLogo_transparent />
+        </StyledSymbolLogo>
         <div>
           <Symbol />
         </div>
@@ -36,9 +36,12 @@ const NotFound = () => {
 
 const StyledSymbolLogo = styled.div`
   z-index: -10;
+  position: absolute;
+  top: 210px;
 `;
 
 const StyledContainer = styled.div`
+  position: relative;
   width: 70%;
   height: 540px;
   margin: auto;
