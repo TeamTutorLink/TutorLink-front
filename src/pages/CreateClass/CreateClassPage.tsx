@@ -49,8 +49,8 @@ const CreateClassPage = () => {
           </div>
         </div>
         <div style={{ display: 'flex' }}>
-          <div>취소</div>
-          <div>생성</div>
+          <StyledButton>취소</StyledButton>
+          <StyledButton>생성</StyledButton>
         </div>
       </StyledCreateClassPageContainer>
       <Footer />
@@ -94,4 +94,16 @@ const StyledImgContainer = styled.div`
   margin-top: 10px;
 `;
 
+const StyledButton = styled.div`
+  margin: 50px auto 30px;
+  width: 160px;
+  height: 30px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 10px 0;
+  text-align: center;
+  background-color: #0e0171;
+  border-radius: 15px;
+  cursor: pointer;
+`;
 export default CreateClassPage;
