@@ -11,11 +11,12 @@ const SymbolLogo = () => {
   );
 };
 
+// NotFound background img
 const StyledLogo = styled.div`
-  cursor: pointer;
+  opacity: 0.15;
   img {
-    width: 250px;
-    height: 40px;
+    width: 900px;
+    height: 130px;
   }
 `;
 export default SymbolLogo;

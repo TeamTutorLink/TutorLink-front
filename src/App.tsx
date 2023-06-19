@@ -1,18 +1,22 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import SettingTest from './SettingTest';
 import MainPage from './pages/Home/MainPage';
-import LoginPage from './pages/Login/LoginPage';
+import CreateClassPage from './pages/CreateClass/CreateClassPage';
+import NotFound from './pages/NotFound';
+import GlobalStyle from './GlobalStyles';
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<MainPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/test" element={<SettingTest />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <GlobalStyle />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+          <Route path="/createclasspage" element={<CreateClassPage />} />
+          <Route path="/*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 };
 
