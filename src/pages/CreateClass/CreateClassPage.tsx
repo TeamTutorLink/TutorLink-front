@@ -4,6 +4,8 @@ import ToggleSwtich from '../../components/ToggleSwitch';
 import styled from 'styled-components';
 import React from 'react';
 import SymbolCenter from '../../assets/SymbolCenter';
+import TagOptions from '../../components/TagOptions';
+import AuthOptions from '../../components/AuthOptions';
 
 const CreateClassPage = () => {
   return (
@@ -40,12 +42,18 @@ const CreateClassPage = () => {
           <div style={{ width: '50%' }}>
             <StyledTitleDiv>방 태그</StyledTitleDiv>
             <StyledSubDiv>방에 어울리는 태그를 선택해주세요</StyledSubDiv>
+            <div style={{ width: '90%', margin: '13px 0 0' }}>
+              <TagOptions />
+            </div>
           </div>
           <div style={{ width: '50%' }}>
             <StyledTitleDiv>방 권한</StyledTitleDiv>
             <StyledSubDiv>
               방에 입장하는 사람들의 권한을 설정해주세요
             </StyledSubDiv>
+            <div style={{ width: '90%', margin: '13px 0 0' }}>
+              <AuthOptions />
+            </div>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
@@ -66,7 +74,7 @@ const StyledCreateClassPageContainer = styled.div`
   margin: 40px auto;
   box-shadow: 0 0 20px #d9d9d9;
   width: 440px;
-  height: 600px;
+  height: 90%;
   border-radius: 10px;
 `;
 const StyledTitleDiv = styled.div`
