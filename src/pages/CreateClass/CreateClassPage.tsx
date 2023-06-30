@@ -96,14 +96,19 @@ const StyledImgContainer = styled.div`
 
 const StyledButton = styled.div`
   margin: 50px auto 30px;
-  width: 160px;
-  height: 30px;
+  width: 170px;
+  height: 40px;
   font-weight: bold;
   color: white;
-  padding: 10px 10px 0;
+  padding: 10px;
   text-align: center;
   background-color: #0e0171;
   border-radius: 15px;
   cursor: pointer;
+  &:hover {
+    color: #0e0171;
+    background-color: white;
+    border: 1.5px solid #0e0171;
+  }
 `;
 export default CreateClassPage;
