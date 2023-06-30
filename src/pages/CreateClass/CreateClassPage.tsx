@@ -6,6 +6,7 @@ import React from 'react';
 import SymbolCenter from '../../assets/SymbolCenter';
 import TagOptions from '../../components/TagOptions';
 import AuthOptions from '../../components/AuthOptions';
+import { Link } from 'react-router-dom';
 
 const CreateClassPage = () => {
   return (
@@ -57,7 +58,9 @@ const CreateClassPage = () => {
           </div>
         </div>
         <div style={{ display: 'flex' }}>
-          <StyledButton>취소</StyledButton>
+          <StyledButton>
+            <Link to="/">취소</Link>
+          </StyledButton>
           <StyledButton>생성</StyledButton>
         </div>
       </StyledCreateClassPageContainer>
