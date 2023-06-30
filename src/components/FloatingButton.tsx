@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const FloatingButton = () => {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +11,9 @@ const FloatingButton = () => {
   return (
     <div>
       <StyledCircleDiv onClick={clickedToggle}>+</StyledCircleDiv>
-      <StyledSideBlock toggle={toggle}>강의 추가 하기</StyledSideBlock>
+      <StyledSideBlock toggle={toggle}>
+        <Link to="/createclasspage">강의 추가 하기</Link>
+      </StyledSideBlock>
     </div>
   );
 };
@@ -39,6 +42,9 @@ const StyledSideBlock = styled.div`
   background-color: #0cdcbf;
   padding: 16px 34px 16px 30px;
   border-radius: 20px;
+  transform: scale(0);
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
   ${(props) =>
     props.toggle &&
     css`
