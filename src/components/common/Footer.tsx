@@ -45,6 +45,7 @@ const StyledCopyright = styled.div`
   width: 80%;
   margin: auto;
   justify-content: center;
+  
   display: flex;
 `;
 const StyledSelect = styled.select`
