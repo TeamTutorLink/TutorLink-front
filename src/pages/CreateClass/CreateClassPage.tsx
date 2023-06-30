@@ -4,6 +4,9 @@ import ToggleSwtich from '../../components/ToggleSwitch';
 import styled from 'styled-components';
 import React from 'react';
 import SymbolCenter from '../../assets/SymbolCenter';
+import TagOptions from '../../components/TagOptions';
+import AuthOptions from '../../components/AuthOptions';
+import { Link } from 'react-router-dom';
 
 const CreateClassPage = () => {
   return (
@@ -40,16 +43,24 @@ const CreateClassPage = () => {
           <div style={{ width: '50%' }}>
             <StyledTitleDiv>방 태그</StyledTitleDiv>
             <StyledSubDiv>방에 어울리는 태그를 선택해주세요</StyledSubDiv>
+            <div style={{ width: '90%', margin: '13px 0 0' }}>
+              <TagOptions />
+            </div>
           </div>
           <div style={{ width: '50%' }}>
             <StyledTitleDiv>방 권한</StyledTitleDiv>
             <StyledSubDiv>
               방에 입장하는 사람들의 권한을 설정해주세요
             </StyledSubDiv>
+            <div style={{ width: '90%', margin: '13px 0 0' }}>
+              <AuthOptions />
+            </div>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
-          <StyledButton>취소</StyledButton>
+          <StyledButton>
+            <Link to="/">취소</Link>
+          </StyledButton>
           <StyledButton>생성</StyledButton>
         </div>
       </StyledCreateClassPageContainer>
@@ -66,7 +77,7 @@ const StyledCreateClassPageContainer = styled.div`
   margin: 40px auto;
   box-shadow: 0 0 20px #d9d9d9;
   width: 440px;
-  height: 600px;
+  height: 90%;
   border-radius: 10px;
 `;
 const StyledTitleDiv = styled.div`
@@ -96,14 +107,19 @@ const StyledImgContainer = styled.div`
 
 const StyledButton = styled.div`
   margin: 50px auto 30px;
-  width: 160px;
-  height: 30px;
+  width: 170px;
+  height: 40px;
   font-weight: bold;
   color: white;
-  padding: 10px 10px 0;
+  padding: 10px;
   text-align: center;
   background-color: #0e0171;
   border-radius: 15px;
   cursor: pointer;
+  &:hover {
+    color: #0e0171;
+    background-color: white;
+    border: 1.5px solid #0e0171;
+  }
 `;
 export default CreateClassPage;

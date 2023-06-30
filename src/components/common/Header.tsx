@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import SymbolLogo from '../../assets/SymbolLogo';
 import styled from 'styled-components';
 
@@ -15,8 +15,12 @@ const Header = () => {
         <div role="button">검색</div>
       </StyledSearchBar>
       <StyledUserInfo>
-        <li>로그인</li>
-        <li>회원가입</li>
+        <li>
+          <Link to="/login">로그인</Link>
+        </li>
+        <li>
+          <Link to="/">회원가입</Link>
+        </li>
       </StyledUserInfo>
     </StyledHeaderContainer>
   );
