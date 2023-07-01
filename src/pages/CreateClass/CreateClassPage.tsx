@@ -2,13 +2,30 @@ import Header from '../../components/common/Header';
 import Footer from '../../components/common/Footer';
 import ToggleSwtich from '../../components/ToggleSwitch';
 import styled from 'styled-components';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SymbolCenter from '../../assets/SymbolCenter';
 import TagOptions from '../../components/TagOptions';
 import AuthOptions from '../../components/AuthOptions';
 import { Link } from 'react-router-dom';
+import { regClassPassword } from '../../constants/regEx';
 
 const CreateClassPage = () => {
+  const [classPw, setclassPw] = useState('');
+  const [showUpMSG, setShowUpMSG] = useState(true);
+
+  const onChangeInputs = (e: { target: { value: any } }) => {
+    const { value } = e.target;
+    setclassPw(value);
+  };
+
+  useEffect(() => {
+    if (classPw && regClassPassword.test(classPw.toString())) {
+      setShowUpMSG(false); //빨간 메시지 끄기
+    } else if (!regClassPassword.test(classPw.toString())) {
+      setShowUpMSG(true); //빨간 메시지 켜기
+    }
+  }, [classPw]);
+
   return (
     <div>
       <Header />
@@ -25,9 +42,18 @@ const CreateClassPage = () => {
               <StyledSubDiv>비밀번호 설정 여부</StyledSubDiv>
             </div>
             <div style={{ width: '100%' }}>
-              <StyledInput type="text" placeholder="비밀번호를 입력하세요" />
+              <StyledInput
+                name="classPw"
+                type="text"
+                inputType="password"
+                placeholder="비밀번호를 입력하세요"
+                value={classPw}
+                onChange={onChangeInputs}
+              />
               <div style={{ color: 'red', fontSize: '10px' }}>
-                영어, 숫자, 특수문자가 포함된 9~16글자이어야 합니다.
+                {showUpMSG
+                  ? '영어, 숫자, 특수문자가 포함된 8~16글자이어야 합니다.'
+                  : null}
               </div>
             </div>
           </div>
