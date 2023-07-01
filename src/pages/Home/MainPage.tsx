@@ -3,11 +3,13 @@ import Footer from '../../components/common/Footer';
 import React from 'react';
 import styled from 'styled-components';
 import FloatingButton from '../../components/FloatingButton';
+import Carousel from '../../components/Carousel';
 
 const MainPage = () => {
   return (
     <div>
       <Header />
+      <Carousel />
       <div>
         <div>검색결과</div>
         <div>00개의 강의를 찾았어요!</div>
