@@ -52,7 +52,7 @@ const CreateClassPage = () => {
               />
               <div style={{ color: 'red', fontSize: '10px' }}>
                 {showUpMSG
-                  ? '영어, 숫자, 특수문자가 포함된 9~16글자이어야 합니다.'
+                  ? '영어, 숫자, 특수문자가 포함된 8~16글자이어야 합니다.'
                   : null}
               </div>
             </div>
