@@ -30,7 +30,7 @@ const StyledHeaderContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: center;
-  padding: 20px 0 0;
+  padding: 20px 0;
   border-bottom: 1px solid #ececec;
 `;
 const StyledSearchBar = styled.div`
@@ -64,7 +64,7 @@ const StyledSearchBar = styled.div`
 const StyledUserInfo = styled.ul`
   display: flex;
   position: relative;
-  top: -10px;
+  // top: 0px;
   width: 20%;
   font-size: 1.3rem;
   align-items: center;
