@@ -1,5 +1,3 @@
-import Header from '../../components/common/Header';
-import Footer from '../../components/common/Footer';
 import ToggleSwtich from '../../components/ToggleSwitch';
 import styled from 'styled-components';
 import React from 'react';
@@ -11,7 +9,6 @@ import { Link } from 'react-router-dom';
 const CreateClassPage = () => {
   return (
     <div>
-      <Header />
       <StyledCreateClassPageContainer>
         <div>
           <StyledTitleDiv>방 제목</StyledTitleDiv>
@@ -57,7 +54,6 @@ const CreateClassPage = () => {
           <StyledButton>생성</StyledButton>
         </div>
       </StyledCreateClassPageContainer>
-      <Footer />
     </div>
   );
 };
