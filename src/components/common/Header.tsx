@@ -14,14 +14,14 @@ const Header = () => {
         <input type="text" placeholder="검색" />
         <div role="button">검색</div>
       </StyledSearchBar>
-      <StyledUserInfo>
+      {/* <StyledUserInfo>
         <li>
           <Link to="/login">로그인</Link>
         </li>
         <li>
           <Link to="/">회원가입</Link>
         </li>
-      </StyledUserInfo>
+      </StyledUserInfo> */}
     </StyledHeaderContainer>
   );
 };
@@ -34,10 +34,10 @@ const StyledHeaderContainer = styled.div`
   border-bottom: 1px solid #ececec;
 `;
 const StyledSearchBar = styled.div`
-  width: 30%;
+  width: 40%;
   height: 35px;
   display: flex;
-  margin: 4px 70px 0;
+  margin: 4px 0 0 90px;
   position: relative;
   & input {
     width: 100%;
@@ -60,19 +60,22 @@ const StyledSearchBar = styled.div`
     font-size: 18px;
     cursor: pointer;
   }
-`;
-const StyledUserInfo = styled.ul`
-  display: flex;
-  position: relative;
-  // top: 0px;
-  width: 20%;
-  font-size: 1.3rem;
-  align-items: center;
-  flex-wrap: wrap;
-  & li {
-    margin: 0 20px;
-    list-style: none;
+  @media screen and (max-width: 500px) {
+    display: none;
   }
 `;
+// const StyledUserInfo = styled.ul`
+//   display: flex;
+//   position: relative;
+//   // top: 0px;
+//   width: 20%;
+//   font-size: 1.3rem;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   & li {
+//     margin: 0 20px;
+//     list-style: none;
+//   }
+// `;
 
 export default Header;
