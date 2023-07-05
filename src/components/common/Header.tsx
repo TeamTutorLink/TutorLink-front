@@ -12,7 +12,9 @@ const Header = () => {
       </div>
       <StyledSearchBar>
         <input type="text" placeholder="검색" />
-        <div role="button">검색</div>
+        <div role="button" onClick={() => navigate('/searchpage')}>
+          검색
+        </div>
       </StyledSearchBar>
       {/* <StyledUserInfo>
         <li>
@@ -32,6 +34,15 @@ const StyledHeaderContainer = styled.div`
   justify-content: center;
   padding: 20px 0;
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    & div {
+      margin: 0 auto 8px;
+    }
+  }
 `;
 const StyledSearchBar = styled.div`
   width: 40%;
@@ -60,8 +71,16 @@ const StyledSearchBar = styled.div`
     font-size: 18px;
     cursor: pointer;
   }
+  @media screen and (max-width: 1080px) {
+    margin: 4px 0 0 30px;
+    & div {
+      font-size: 16px;
+      width: 23%;
+    }
+  }
   @media screen and (max-width: 500px) {
-    display: none;
+    display: flex;
+    width: 100%;
   }
 `;
 // const StyledUserInfo = styled.ul`

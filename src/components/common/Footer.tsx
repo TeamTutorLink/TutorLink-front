@@ -45,11 +45,11 @@ const StyledCopyright = styled.div`
   width: 80%;
   margin: auto;
   justify-content: center;
-  
   display: flex;
 `;
 const StyledSelect = styled.select`
   height: 30px;
+  margin-top: 5px;
 `;
 
 export default Footer;

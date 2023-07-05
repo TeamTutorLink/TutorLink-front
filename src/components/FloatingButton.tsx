@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import PlusIcon from '../assets/PlusIcon';
 
 const FloatingButton = () => {
   const [toggle, setToggle] = useState(false);
@@ -10,7 +11,9 @@ const FloatingButton = () => {
   };
   return (
     <div>
-      <StyledCircleDiv onClick={clickedToggle}>+</StyledCircleDiv>
+      <StyledCircleDiv onClick={clickedToggle}>
+        <PlusIcon />
+      </StyledCircleDiv>
       <StyledSideBlock toggle={toggle}>
         <Link to="/createclasspage">강의 추가 하기</Link>
       </StyledSideBlock>
@@ -24,13 +27,16 @@ const StyledCircleDiv = styled.div`
   border-radius: 30px;
   background-color: #0e0171;
   color: white;
-  font-size: 56px;
-  padding-left: 11px;
+  padding: 0 0 0 11px;
   position: fixed;
   z-index: 10;
   right: 40px;
   bottom: 40px;
   cursor: pointer;
+  @media screen and (max-width: 500px) {
+    right: 20px;
+    bottom: 30px;
+  }
 `;
 
 const StyledSideBlock = styled.div`
@@ -40,9 +46,9 @@ const StyledSideBlock = styled.div`
   font-weight: bold;
   bottom: 45px;
   background-color: #0cdcbf;
-  padding: 16px 34px 16px 30px;
+  padding: 16px 36px 16px 23px;
   border-radius: 20px;
-  transform: scale(0);
+  transform: scale(0.1) translateX(-500px);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   ${(props) =>
@@ -51,6 +57,10 @@ const StyledSideBlock = styled.div`
       transform: translate(-142px, 0);
       transition: all 0.5s ease-in-out;
     `}
+  @media screen and (max-width: 500px) {
+    right: -90px;
+    bottom: 35px;
+  }
 `;
 
 export default FloatingButton;
