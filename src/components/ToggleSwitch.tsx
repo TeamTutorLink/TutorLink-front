@@ -1,24 +1,30 @@
 import styled, { css } from 'styled-components';
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import PasswordInput from './PasswordInput';
 
 const ToggleSwtich = () => {
   const [toggle, setToggle] = useState(false);
+
   const clickedToggle = () => {
     setToggle((prev) => !prev);
   };
+
   return (
-    <div>
-      <StyledToggleBtn onClick={clickedToggle} toggle={toggle}>
-        <StyledCircle toggle={toggle} />
-      </StyledToggleBtn>
-      {/* <h3>Toggle Switch {!toggle ? 'OFF' : 'ON'}</h3> */}
+    <div style={{ display: 'flex' }}>
+      <div>
+        <StyledToggleBtn onClick={clickedToggle} toggle={toggle}>
+          <StyledCircle toggle={toggle} />
+        </StyledToggleBtn>
+        {/* <div>toggle switch{!toggle ? 'OFF' : 'ON'}</div> */}
+        <StyledSubDiv>비밀번호 설정 여부</StyledSubDiv>
+      </div>
+      <div>{!toggle ? null : <PasswordInput />}</div>
     </div>
   );
 };
 
 const StyledToggleBtn = styled.button`
-  margin: 5px 0;
+  margin: 5px 30px 5px 0;
   width: 70px;
   height: 30px;
   border-radius: 30px;
@@ -45,5 +51,11 @@ const StyledCircle = styled.div`
       transform: translate(40px, 0);
       transition: all 0.5s ease-in-out;
     `}
+`;
+
+const StyledSubDiv = styled.div`
+  font-size: 10px;
+  margin: 8px 0 0;
+  color: gray;
 `;
 export default ToggleSwtich;

@@ -4,7 +4,6 @@ import MainPage from './pages/Home/MainPage';
 import CreateClassPage from './pages/CreateClass/CreateClassPage';
 import NotFound from './pages/NotFound';
 import GlobalStyle from './GlobalStyles';
-import LoginPage from './pages/Login/LoginPage';
 
 const App = () => {
   return (
@@ -14,7 +13,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/createclasspage" element={<CreateClassPage />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
