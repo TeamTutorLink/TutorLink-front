@@ -6,17 +6,18 @@ import NotFound from './pages/NotFound';
 import GlobalStyle from './GlobalStyles';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
+import SearchPage from './pages/SearchPage/SearchPage';
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/createclasspage" element={<CreateClassPage />} />
+          <Route path="/searchpage" element={<SearchPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />

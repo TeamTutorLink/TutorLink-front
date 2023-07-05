@@ -25,7 +25,7 @@ const StyledCircleDiv = styled.div`
   background-color: #0e0171;
   color: white;
   font-size: 56px;
-  padding-left: 11px;
+  padding: 0 0 0 11px;
   position: fixed;
   z-index: 10;
   right: 40px;

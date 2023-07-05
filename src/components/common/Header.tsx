@@ -12,7 +12,9 @@ const Header = () => {
       </div>
       <StyledSearchBar>
         <input type="text" placeholder="검색" />
-        <div role="button">검색</div>
+        <div role="button" onClick={() => navigate('/searchpage')}>
+          검색
+        </div>
       </StyledSearchBar>
       {/* <StyledUserInfo>
         <li>
