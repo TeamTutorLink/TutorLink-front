@@ -109,14 +109,6 @@ const StyledList = styled.div`
   }
 `;
 const StyledMainContainer = styled.div`
-  width: 80%;
   margin: 20px auto 30px;
-
-  @media screen and (max-width: 1080px) {
-    width: 90%;
-  }
-  @media screen and (max-width: 500px) {
-    width: 90%;
-  }
 `;
 export default MyPage;
