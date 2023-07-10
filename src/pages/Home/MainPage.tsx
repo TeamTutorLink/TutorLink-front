@@ -9,15 +9,22 @@ const MainPage = () => {
     <div>
       <Carousel />
       <StyledMainContainer>
+        <StyledTitleDiv>인기있는 강의</StyledTitleDiv>
         <ClassListsMain />
+        <StyledTitleDiv>최신 강의</StyledTitleDiv>
         <ClassListsMain />
+        <StyledTitleDiv>전체 강의</StyledTitleDiv>
         <ClassListsMain />
       </StyledMainContainer>
       <FloatingButton />
     </div>
   );
 };
-
+const StyledTitleDiv = styled.div`
+  font-weight: bold;
+  font-size: 20px;
+  margin: 30px 0 10px;
+`;
 const StyledMainContainer = styled.div`
   width: 80%;
   margin: 60px auto 30px;

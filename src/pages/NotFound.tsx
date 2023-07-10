@@ -1,5 +1,3 @@
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Symbol from '../assets/Symbol';
 import React from 'react';
 import styled from 'styled-components';

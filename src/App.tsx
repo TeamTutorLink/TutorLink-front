@@ -8,6 +8,7 @@ import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import SearchPage from './pages/SearchPage/SearchPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import MyPage from './pages/MyPage/MyPage';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/createclasspage" element={<CreateClassPage />} />
           <Route path="/searchpage" element={<SearchPage />} />
           <Route path="/loginpage" element={<LoginPage />} />
+          <Route path="/mypage" element={<MyPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
