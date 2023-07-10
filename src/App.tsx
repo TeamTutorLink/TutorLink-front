@@ -7,6 +7,7 @@ import GlobalStyle from './GlobalStyles';
 import Header from './components/common/Header';
 import Footer from './components/common/Footer';
 import SearchPage from './pages/SearchPage/SearchPage';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path="/" element={<MainPage />} />
           <Route path="/createclasspage" element={<CreateClassPage />} />
           <Route path="/searchpage" element={<SearchPage />} />
+          <Route path="/loginpage" element={<LoginPage />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
