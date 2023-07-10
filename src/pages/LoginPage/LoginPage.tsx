@@ -7,7 +7,7 @@ const LoginPage = () => {
   return (
     <div>
       <StyledCreateClassPageContainer>
-        <div style={{ margin: '0 auto 14px' }}>
+        <div style={{ margin: '0 auto 20px' }}>
           <Symbol />
         </div>
         <div>
@@ -35,7 +35,7 @@ const StyledCreateClassPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 25px;
+  padding: 50px 25px;
   margin: 40px auto;
   box-shadow: 0 0 20px #d9d9d9;
   width: 440px;
@@ -62,7 +62,7 @@ const StyledSubDiv = styled.div`
 `;
 
 const StyledButton = styled.div`
-  margin: 18px auto 40px;
+  margin: 30px auto 70px;
   width: 170px;
   height: 40px;
   font-weight: bold;

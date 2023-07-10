@@ -52,6 +52,10 @@ const StyledImg = styled.img`
   margin: 25px 0;
   box-shadow: 0 0 5px #d9d9d9;
   border-radius: 15px;
+  cursor: pointer;
+  &: hover {
+    box-shadow: 0 0 3px black;
+  }
 `;
 
 export default SocialLoginButtons;

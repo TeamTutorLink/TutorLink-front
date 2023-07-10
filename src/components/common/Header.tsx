@@ -16,14 +16,14 @@ const Header = () => {
           검색
         </div>
       </StyledSearchBar>
-      {/* <StyledUserInfo>
+      <StyledUserInfo>
         <li>
-          <Link to="/login">로그인</Link>
+          <Link to="/loginPage">로그인</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/">회원가입</Link>
-        </li>
-      </StyledUserInfo> */}
+        </li> */}
+      </StyledUserInfo>
     </StyledHeaderContainer>
   );
 };
@@ -83,18 +83,21 @@ const StyledSearchBar = styled.div`
     width: 100%;
   }
 `;
-// const StyledUserInfo = styled.ul`
-//   display: flex;
-//   position: relative;
-//   // top: 0px;
-//   width: 20%;
-//   font-size: 1.3rem;
-//   align-items: center;
-//   flex-wrap: wrap;
-//   & li {
-//     margin: 0 20px;
-//     list-style: none;
-//   }
-// `;
+const StyledUserInfo = styled.ul`
+  display: flex;
+  position: relative;
+  // top: 0px;
+  width: 20%;
+  font-size: 1.2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  & li {
+    margin: 0 0 0 25%;
+    list-style: none;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
+`;
 
 export default Header;
