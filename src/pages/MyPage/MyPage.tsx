@@ -19,7 +19,7 @@ const MyPage = () => {
           <StyledHr />
           <StyledSubDiv>
             안녕하세요. 저는 수학 선생님 김수학입니다. 8년차 수학 강사입니다. 잘
-            부탁드립니다.
+            부탁드립니다. 궁금한 사항은 메시지 남겨주세요.
           </StyledSubDiv>
           <StyledHr />
         </div>
@@ -65,7 +65,7 @@ const StyledContainer = styled.div`
 `;
 
 const StyledNameDiv = styled.div`
-  font-size: 16px;
+  font-size: 20px;
   margin: 60px 0 20px;
 `;
 
@@ -77,7 +77,7 @@ const StyledHr = styled.hr`
 
 const StyledSubDiv = styled.div`
   display: flex;
-  width: 50%;
+  width: 100%;
   font-size: 11px;
   margin-bottom: 10px;
   color: gray;
