@@ -1,5 +1,3 @@
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
 import Symbol from '../assets/Symbol';
 import React from 'react';
 import styled from 'styled-components';
@@ -9,7 +7,6 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
   return (
     <>
-      <Header />
       <StyledContainer>
         <StyledSymbolLogo>
           <SymbolLogo_transparent />
@@ -29,7 +26,6 @@ const NotFound = () => {
           </Link>
         </StyledButton>
       </StyledContainer>
-      <Footer />
     </>
   );
 };
