@@ -4,10 +4,13 @@ import ClassListsMain from '../../components/ClassListsMain';
 import MyPageBackground from '../../assets/MyPageBackground';
 import MyPageProfile from '../../assets/MyPageProfile';
 import FloatingButton from '../../components/FloatingButton';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const MyPage = () => {
   return (
     <div>
+      <Header />
       <StyledBackgroundDiv>
         <MyPageBackground />
       </StyledBackgroundDiv>
@@ -33,6 +36,7 @@ const MyPage = () => {
         </StyledMainContainer>
       </StyledContainer>
       <FloatingButton />
+      <Footer />
     </div>
   );
 };

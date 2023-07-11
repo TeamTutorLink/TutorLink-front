@@ -4,8 +4,6 @@ import MainPage from './pages/Home/MainPage';
 import CreateClassPage from './pages/CreateClass/CreateClassPage';
 import NotFound from './pages/NotFound';
 import GlobalStyle from './GlobalStyles';
-import Header from './components/common/Header';
-import Footer from './components/common/Footer';
 import SearchPage from './pages/SearchPage/SearchPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MyPage from './pages/MyPage/MyPage';
@@ -16,7 +14,6 @@ const App = () => {
     <>
       <GlobalStyle />
       <BrowserRouter>
-        <Header />
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path="/createclasspage" element={<CreateClassPage />} />
@@ -26,7 +23,6 @@ const App = () => {
           <Route path="/classboard" element={<ClassBoard />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
-        <Footer />
       </BrowserRouter>
     </>
   );

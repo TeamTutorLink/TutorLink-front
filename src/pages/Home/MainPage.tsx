@@ -3,10 +3,13 @@ import styled from 'styled-components';
 import FloatingButton from '../../components/FloatingButton';
 import Carousel from '../../components/Carousel';
 import ClassListsMain from '../../components/ClassListsMain';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const MainPage = () => {
   return (
     <div>
+      <Header />
       <Carousel />
       <StyledMainContainer>
         <StyledTitleDiv>인기있는 강의</StyledTitleDiv>
@@ -17,6 +20,7 @@ const MainPage = () => {
         <ClassListsMain />
       </StyledMainContainer>
       <FloatingButton />
+      <Footer />
     </div>
   );
 };

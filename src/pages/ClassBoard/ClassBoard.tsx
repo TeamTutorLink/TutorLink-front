@@ -83,7 +83,7 @@ const ClassBoard = ({ width, height }: CanvasProps) => {
     setIsPainting(false);
   }, []);
 
-  // 지우는 기능 - onClick 이벤트에 바인딩해주기
+  // 지우기 기능 - onClick 이벤트에 바인딩해주기
   //   const clearCanvas = () => {
   //     if (!canvasRef.current) {
   //       return;
@@ -93,6 +93,8 @@ const ClassBoard = ({ width, height }: CanvasProps) => {
   //     canvas.getContext('2d')!!.clearRect(0, 0, canvas.width, canvas.height);
   // }
 
+  // useEffect와 addEventListener 함께 사용하여, 렌더링 시점 구분.
+  // useEffect는 최초 렌더링 끝난 뒤, 실행.
   useEffect(() => {
     if (!canvasRef.current) {
       return;
@@ -104,6 +106,7 @@ const ClassBoard = ({ width, height }: CanvasProps) => {
     canvas.addEventListener('mouseup', exitPaint);
     canvas.addEventListener('mouseleave', exitPaint);
 
+    // eventListener는 이벤트 트리거가 작동되기 만을 계속 기다림. 이벤트 종료 시키기 위해, remove 시킴.
     return () => {
       canvas.removeEventListener('mousedown', startPaint);
       canvas.removeEventListener('mousemove', paint);
@@ -135,7 +138,6 @@ const StyledContainer = styled.div`
   text-align: center;
 `;
 const StyledCanvasDiv = styled.div`
-  border-radius: 15px;
   background: lightgrey;
 `;
 export default ClassBoard;

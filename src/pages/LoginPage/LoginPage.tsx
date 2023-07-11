@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import React from 'react';
 import Symbol from '../../assets/Symbol';
 import SocialLoginButtons from '../../components/SocialLoginButtons';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const LoginPage = () => {
   return (
     <div>
+      <Header />
       <StyledCreateClassPageContainer>
         <div style={{ margin: '0 auto 20px' }}>
           <Symbol />
@@ -22,6 +25,7 @@ const LoginPage = () => {
         </div>
         <SocialLoginButtons />
       </StyledCreateClassPageContainer>
+      <Footer />
     </div>
   );
 };
