@@ -1,5 +1,5 @@
 # TutorLink - front
-## (230713 기준 진행 중, 프론트엔드 레이아웃 작업 완료)
+### (230713 기준, 진행 중인 프로젝트 입니다. 프론트엔드 레이아웃 작업 완료 by 다정)
 
 ## Description
 1명의 프론트엔드, 1명의 백엔드 개발자의 팀 프로젝트!
@@ -32,51 +32,51 @@
 <br/>
 
 ## Features
-### [초기 TutorLink 화면 구성도](https://www.figma.com/file/D0NYPYYg1owUOKOQZPiCwx/Project-Ssasy?node-id=0-1&t=g00ya5lGmWJtwgqf-0](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design))
+### [초기 TutorLink 화면 구성도](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design)
 
 ### 메인 페이지
+(레이아웃 완성)
 <p align="center">
  <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/bdc1a70f-1951-4e82-a9d5-10327c3441ca"/>
   </p>
 <br/>
 
 ### 클래스 페이지
-
+(레이아웃 완성)
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/e931b402-f1c2-47e7-95d9-6002b29797bd"/>
 </p>
 <br/>
 
 ### 클래스 생성 페이지
-
+(레이아웃 완성)
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/5c0bbd98-32e0-44f9-b22b-453c6dfd5ecb"/>
 </p>
 <br/>
 
 ### 검색 페이지
-
+(레이아웃 완성)
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/312e5c02-070a-4f7f-93a5-1e2413b4265e"/>
 </p>
 <br/>
 
 ### 로그인 페이지
-
+(레이아웃 완성)
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/a7a9cc92-8672-4e2c-b079-f53723bbc53e"/>
 </p>
 <br/>
 
 ### 마이 페이지
-
+(레이아웃 완성)
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/14edbfdd-a063-4ef6-99ce-4ce856437292"/>
 </p>
 <br/>
 
 ### 404 에러 페이지
-
 <p align="center">
   <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/de126be5-98b4-4ecb-a44d-3ef3c537f1b8"/>
 </p>
@@ -88,7 +88,7 @@
 </p>
 <br/>
 <br/>
-___
+
 **진행 과정**
 - 백엔드 1명, 프론트 1명으로 구성된 팀 프로젝트
 - REST Docs 문서를 기반으로 백엔드 분들과 함께 소통하며 작업했습니다.
