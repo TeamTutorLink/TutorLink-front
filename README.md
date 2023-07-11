@@ -28,7 +28,8 @@
 |6|마이페이지|클래스별 정렬|
 |7|404 에러페이지|레이아웃|
 |8|헤더, 풋터|사이드 메뉴바, 로그인/비로그인 사용자 구분|
-
+<br/>
+<br/>
 
 ## Features
 ### [초기 TutorLink 화면 구성도](https://www.figma.com/file/D0NYPYYg1owUOKOQZPiCwx/Project-Ssasy?node-id=0-1&t=g00ya5lGmWJtwgqf-0](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design))
@@ -77,10 +78,10 @@
 
 ### 반응형 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+  <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/88a689e6-8c86-4842-ab94-3fb8bc07a134"/>
 </p>
 <br/>
-
+<br/>
 ___
 **진행 과정**
 - 백엔드 1명, 프론트 1명으로 구성된 팀 프로젝트
@@ -106,8 +107,8 @@ ___
   - 방 비밀번호 유효성 검사
 - API
   - Axios Intercepter로 에러 핸들링
-
-
+<br/>
+<br/>
 
 # VscodeExtention
 
