@@ -3,6 +3,7 @@ import React from 'react';
 import ClassListsMain from '../../components/ClassListsMain';
 import MyPageBackground from '../../assets/MyPageBackground';
 import MyPageProfile from '../../assets/MyPageProfile';
+import FloatingButton from '../../components/FloatingButton';
 
 const MyPage = () => {
   return (
@@ -31,6 +32,7 @@ const MyPage = () => {
           <ClassListsMain />
         </StyledMainContainer>
       </StyledContainer>
+      <FloatingButton />
     </div>
   );
 };
