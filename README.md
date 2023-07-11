@@ -1,4 +1,113 @@
 # TutorLink - front
+## (230713 기준 진행 중, 프론트엔드 레이아웃 작업 완료)
+
+## Description
+1명의 프론트엔드, 1명의 백엔드 개발자의 팀 프로젝트!
+
+💬 React.js, Sass, styled-components, TypeScript, Axios, StompJs, SockJS를 활용하여 과외방 개설 및 양방향 통신 수업(채팅, 화면 공유) 등을 구현한 과외 사이트입니다. 
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/124070996/236616186-bfaf628c-2a3a-4108-8484-c1e5daa46242.gif"/>
+  </p>
+<br/>
+
+
+## Contributors 
+|이름|맡은 파트|github|
+|---|---|---|
+|김다정|로고 및 심볼 디자인, UI/UX 디자인, 프론트 단독으로 모든 기능 구현|[다정 github](https://github.com/danakim530)|
+|하지웅|UI/UX 디자인|[지웅 github](https://github.com/hajiung25)|
+
+|번호|페이지명|대표 기능|
+|---|---|---|
+|1|메인페이지|반응형, 플로팅 버튼, 캐로셀, 좋아요 기능, 페이지네이션 |
+|2|검색페이지|검색결과화면, 검색 시, 추천키워드 생성|
+|3|클래스페이지|화면 공유, 채팅, 화면 드로잉|
+|4|클래스생성페이지|방 비밀번호 유효성 검사, 토글, 셀렉터, 태그 생성, 이미지 삽입(Drag and Drop)|
+|5|로그인페이지|JWT토큰 관리(Refresh Token), 소셜로그인(카카오)|
+|6|마이페이지|클래스별 정렬|
+|7|404 에러페이지|레이아웃|
+|8|헤더, 풋터|사이드 메뉴바, 로그인/비로그인 사용자 구분|
+
+
+## Features
+### [초기 TutorLink 화면 구성도](https://www.figma.com/file/D0NYPYYg1owUOKOQZPiCwx/Project-Ssasy?node-id=0-1&t=g00ya5lGmWJtwgqf-0](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design))
+
+### 메인 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 클래스 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 클래스 생성 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 검색 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 로그인 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 마이 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236616351-ee40868a-7f7d-41e1-a6ce-546fb14c6627.gif"/>
+</p>
+<br/>
+
+### 404 에러 페이지
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+### 반응형 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/124070996/236617240-7e7d2397-bd04-4c84-a9f4-185dc24aa3b5.gif"/>
+</p>
+<br/>
+
+___
+**진행 과정**
+- 백엔드 1명, 프론트 1명으로 구성된 팀 프로젝트
+- REST Docs 문서를 기반으로 백엔드 분들과 함께 소통하며 작업했습니다.
+- 매주 주 2회 정기모임을 가지며 백엔드와 프론트엔드 사이의 진도를 조율했습니다.
+
+**주요 기능** 
+- 디자인
+  - Figma를 이용한 UI/UX 설계 
+  - SASS, Styled-components를 이용한 반응형 웹 디자인 구현
+- 초기 세팅
+  - 타입스크립트, eslint를 통한 버그 관리
+  - Prettier
+- 회원정보
+  - 소셜 로그인(카카오) 
+  - 로그인한 유저의 token관리(Refresh Token, Access Token)
+- 클래스 
+  - 양방향 통신 채팅 기능(StompJS, SockJS)
+  - 화면 공유
+  - 화면 드로잉 기능 
+- 클래스 생성 
+  - 이미지 삽입(Drag and Drop)
+  - 방 비밀번호 유효성 검사
+- API
+  - Axios Intercepter로 에러 핸들링
+
+
 
 # VscodeExtention
 
@@ -44,9 +153,9 @@
 ## 기술
 
 - React, Typescript
-- Redux
 - Axios, React Testing Library
-- styled-components
+- styled-components, SASS
+- SockJS, StompJS
 - Eslint, Prettier
 
 ## git convention
