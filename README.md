@@ -10,6 +10,7 @@
 
 💬 React.js, Sass, styled-components, TypeScript, Axios, StompJs, SockJS를 활용하여 과외방 개설 및 양방향 통신 수업(채팅, 화면 공유) 등을 구현한 과외 사이트입니다. 
 <br/>
+<br/>
 
 ## Contributors 
 |이름|맡은 파트|github|
@@ -29,7 +30,6 @@
 |8|헤더, 풋터|사이드 메뉴바, 로그인/비로그인 사용자 구분|
 <br/>
 <br/>
-<hr/>
 
 ## Features
 ### [초기 TutorLink 화면 구성도](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design)
