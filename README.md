@@ -1,16 +1,14 @@
 # TutorLink - front
-### (230713 기준, 진행 중인 프로젝트 입니다. 프론트엔드 레이아웃 작업 완료 by 다정)
-
-## Description
-1명의 프론트엔드, 1명의 백엔드 개발자의 팀 프로젝트!
-
-💬 React.js, Sass, styled-components, TypeScript, Axios, StompJs, SockJS를 활용하여 과외방 개설 및 양방향 통신 수업(채팅, 화면 공유) 등을 구현한 과외 사이트입니다. 
-
+#### (230718 기준, 현재 진행 중인 프로젝트 입니다. 프론트엔드 레이아웃 작업 완료 by 다정)
 <p align="center">
  <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/bdc1a70f-1951-4e82-a9d5-10327c3441ca"/>
   </p>
 <br/>
 
+## Description
+1명의 프론트엔드, 1명의 백엔드 개발자의 팀 프로젝트!
+
+💬 React.js, Sass, styled-components, TypeScript, Axios, StompJs, SockJS를 활용하여 과외방 개설 및 양방향 통신 수업(채팅, 화면 공유) 등을 구현한 과외 사이트입니다. 
 
 ## Contributors 
 |이름|맡은 파트|github|
@@ -30,6 +28,7 @@
 |8|헤더, 풋터|사이드 메뉴바, 로그인/비로그인 사용자 구분|
 <br/>
 <br/>
+<hr/>
 
 ## Features
 ### [초기 TutorLink 화면 구성도](https://www.figma.com/file/KjsdlbAycJH5oKaelvqmi8/Untitled?type=design&node-id=101-1399&mode=design)
@@ -88,6 +87,7 @@
 </p>
 <br/>
 <br/>
+<hr/>
 
 **진행 과정**
 - 백엔드 1명, 프론트 1명으로 구성된 팀 프로젝트
