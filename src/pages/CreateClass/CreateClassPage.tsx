@@ -54,7 +54,9 @@ const CreateClassPage = () => {
           <StyledButton>
             <Link to="/">취소</Link>
           </StyledButton>
-          <StyledButton>생성</StyledButton>
+          <StyledButton>
+            <Link to="/classboard">생성</Link>
+          </StyledButton>
         </div>
       </StyledCreateClassPageContainer>
       <Footer />
