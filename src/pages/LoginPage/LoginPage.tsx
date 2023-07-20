@@ -15,7 +15,7 @@ const LoginPage = () => {
         </div>
         <div>
           <StyledInput type="text" placeholder="아이디를 입력하세요" />
-          <StyledInput type="text" placeholder="비밀번호를 입력하세요" />
+          <StyledInput type="password" placeholder="비밀번호를 입력하세요" />
         </div>
         <StyledButton>로그인</StyledButton>
         <div style={{ display: 'flex' }}>
