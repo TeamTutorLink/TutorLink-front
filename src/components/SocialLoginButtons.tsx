@@ -28,6 +28,14 @@ const SocialLoginButtons = () => {
       description: 'For offroad lovers. Super fast, Super Comfortable.',
     },
   ];
+
+  // Social Login(Kakao)
+  const REST_API_KEY = process.env.REST_API_KEY; // client_id
+  const REDIRECT_URI = process.env.REDIRECT_URI; // 프론트 접근 가능한 경로로
+  const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+  const loginHandler = () => {
+    window.location.href = KAKAO_AUTH_URL;
+  };
   return (
     <div
       style={{
@@ -39,7 +47,12 @@ const SocialLoginButtons = () => {
     >
       {ButtonImgs.map((item) => (
         <div key={item.id}>
-          <StyledImg src={item.src} alt={item.alt} className="img" />
+          <StyledImg
+            src={item.src}
+            alt={item.alt}
+            className="img"
+            onClick={loginHandler}
+          />
           {/* <h2 className="title">{item.title}</h2>
           <p className="description">{item.description}</p> */}
         </div>

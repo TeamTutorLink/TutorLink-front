@@ -1,15 +1,36 @@
 import React from 'react';
 import styled from 'styled-components';
-import ClassList from './ClassList';
+import ClassEach from './ClassEach';
+import API from '../API/API';
 
 const ClassListsMain = () => {
   return (
     <StyledContainer>
       <StyledClassLists>
-        <ClassList />
-        <ClassList />
-        <ClassList />
-        <ClassList />
+        <ClassEach
+          lessonId={3}
+          title="두시수업"
+          userName="김다정"
+          likeCount={10}
+        />
+        <ClassEach
+          lessonId={3}
+          title="두시수업"
+          userName="김다정"
+          likeCount={10}
+        />
+        <ClassEach
+          lessonId={3}
+          title="두시수업"
+          userName="김다정"
+          likeCount={10}
+        />
+        <ClassEach
+          lessonId={3}
+          title="두시수업"
+          userName="김다정"
+          likeCount={10}
+        />
       </StyledClassLists>{' '}
     </StyledContainer>
   );
