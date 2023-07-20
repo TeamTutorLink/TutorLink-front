@@ -30,7 +30,7 @@ const SocialLoginButtons = () => {
   ];
 
   // Social Login(Kakao)
-  const REST_API_KEY = process.env.REST_API_KEY; // client_id
+  const REST_API_KEY = process.env.REST_API_KEY; // == client_id
   const REDIRECT_URI = process.env.REDIRECT_URI; // 프론트 접근 가능한 경로로
   const KAKAO_AUTH_URL = `https://kauth.kakao.com/oauth/authorize?client_id=${REST_API_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const loginHandler = () => {

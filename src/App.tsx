@@ -8,6 +8,7 @@ import SearchPage from './pages/SearchPage/SearchPage';
 import LoginPage from './pages/LoginPage/LoginPage';
 import MyPage from './pages/MyPage/MyPage';
 import ClassBoard from './pages/ClassBoard/ClassBoard';
+import Redirection from './pages/Redirection';
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/classboard" element={<ClassBoard />} />
           <Route path="/*" element={<NotFound />} />
+          <Route path="/auth/kakao-login" element={<Redirection />} />
         </Routes>
       </BrowserRouter>
     </>

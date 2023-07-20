@@ -48,6 +48,8 @@ const axiosAuthTokenApi = ({ options }: any) => {
       return Promise.reject(error);
     },
   );
+
+  // 로컬스토리지에 저장한 토큰을 필요할때마다 request에 담아서 보내기
   instance.interceptors.request.use(
     (config) => {
       const accessToken = localStorage.getItem('accessToken');
