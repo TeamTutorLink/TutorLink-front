@@ -5,10 +5,13 @@ import SymbolCenter from '../../assets/SymbolCenter';
 import TagOptions from '../../components/TagOptions';
 import AuthOptions from '../../components/AuthOptions';
 import { Link } from 'react-router-dom';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const CreateClassPage = () => {
   return (
     <div>
+      <Header />
       <StyledCreateClassPageContainer>
         <div>
           <StyledTitleDiv>방 제목</StyledTitleDiv>
@@ -54,6 +57,7 @@ const CreateClassPage = () => {
           <StyledButton>생성</StyledButton>
         </div>
       </StyledCreateClassPageContainer>
+      <Footer />
     </div>
   );
 };

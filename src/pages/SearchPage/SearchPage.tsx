@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import FloatingButton from '../../components/FloatingButton';
-import Carousel from '../../components/Carousel';
 import ClassListsSearch from '../../components/ClassListsSearch';
+import Header from '../../components/common/Header';
+import Footer from '../../components/common/Footer';
 
 const SearchPage = () => {
   return (
     <div>
+      <Header />
       <StyledMainContainer>
         <ClassListsSearch />
       </StyledMainContainer>
       <FloatingButton />
+      <Footer />
     </div>
   );
 };
