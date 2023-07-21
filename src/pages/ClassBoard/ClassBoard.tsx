@@ -56,6 +56,7 @@ const ClassBoard = ({ width, height }: CanvasProps) => {
   };
 
   const startPaint = useCallback((event: MouseEvent) => {
+    //useCallback으로 렌더링 최적화(이벤트 핸들러 함수 자주 재생성되는 경우, 불필요한 렌더링 방지)
     const coordinates = getCoordinates(event);
     if (coordinates) {
       setIsPainting(true);

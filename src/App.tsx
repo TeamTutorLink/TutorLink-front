@@ -23,7 +23,7 @@ const App = () => {
           <Route path="/mypage" element={<MyPage />} />
           <Route path="/classboard" element={<ClassBoard />} />
           <Route path="/*" element={<NotFound />} />
-          <Route path="/auth/kakao-login" element={<Redirection />} />
+          <Route path="/kakao-redirect" element={<Redirection />} />
         </Routes>
       </BrowserRouter>
     </>
