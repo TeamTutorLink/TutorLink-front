@@ -35,20 +35,18 @@ const ClassListsSearch = () => {
       <StyledSubDiv>00개의 강의를 찾았어요!</StyledSubDiv>
       <hr />
       <StyledClassLists>
-        <div>
-          {classInfo
-            ? classInfo.map((classInfo) => {
-                return (
-                  <ClassEach
-                    lessonId={classInfo.lessonId}
-                    title={classInfo.title}
-                    userName={classInfo.userName}
-                    likeCount={classInfo.likeCount}
-                  />
-                );
-              })
-            : null}
-        </div>
+        {classInfo
+          ? classInfo.map((classInfo) => {
+              return (
+                <ClassEach
+                  lessonId={classInfo.lessonId}
+                  title={classInfo.title}
+                  userName={classInfo.userName}
+                  likeCount={classInfo.likeCount}
+                />
+              );
+            })
+          : null}
       </StyledClassLists>
     </StyledContainer>
   );
