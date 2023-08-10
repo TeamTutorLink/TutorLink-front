@@ -6,18 +6,20 @@ interface ClassEachProps {
   lessonId: number;
   title: string;
   userName: string;
+  likeLesson?: boolean;
   likeCount: number;
 }
 
 const ClassEach = (props: ClassEachProps) => {
-  const { lessonId, title, userName, likeCount } = props;
+  const { lessonId, title, userName, likeLesson, likeCount } = props;
   return (
     <StyledContainer>
       <TestImage />
       <StyledClassName>{title}</StyledClassName>
       <StyledTag>
         {lessonId}
-        {likeCount}
+        {/* {likeLesson} */}
+        {/* {likeCount} */}
       </StyledTag>
       <StyledTeacherName>{userName}</StyledTeacherName>
     </StyledContainer>

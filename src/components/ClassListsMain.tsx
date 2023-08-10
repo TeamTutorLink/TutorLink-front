@@ -7,6 +7,7 @@ export type ClassInfo = {
   lessonId: number;
   title: string;
   userName: string;
+  likeLesson?: boolean;
   likeCount: number;
 };
 
@@ -17,10 +18,17 @@ const ClassListsMain = () => {
   // const [userName, setUserName] = useState();
   // const [likeCount, setLikeCount] = useState();
   useEffect(() => {
+    const accessToken = localStorage.getItem('accessToken');
     const asynData = async () => {
-      const response = await API.getLessons();
-      console.log(response.data);
-      setClassInfo(response.data);
+      if (accessToken) {
+        const response = await API.getLoginLessons();
+        console.log(response.data);
+        setClassInfo(response.data);
+      } else {
+        const response = await API.getLessons();
+        console.log(response.data);
+        setClassInfo(response.data);
+      }
       // setLessonId(response.data.lessonId);
       // setTitle(response.data.title);
       // setUserName(response.data.userName);
@@ -39,6 +47,7 @@ const ClassListsMain = () => {
                   lessonId={classInfo.lessonId}
                   title={classInfo.title}
                   userName={classInfo.userName}
+                  likeLesson={classInfo.likeLesson}
                   likeCount={classInfo.likeCount}
                 />
               );

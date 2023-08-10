@@ -16,8 +16,6 @@ const MainPage = () => {
         <ClassListsMain />
         <StyledTitleDiv>최신 강의</StyledTitleDiv>
         <ClassListsMain />
-        <StyledTitleDiv>전체 강의</StyledTitleDiv>
-        <ClassListsMain />
       </StyledMainContainer>
       <FloatingButton />
       <Footer />

@@ -1,4 +1,4 @@
-//KakaoAuth
+//KakaoAuth카카오
 //카카오로부터 받은 인가코드를 백엔드에 전달할 로직이 작성된 Redirection 페이지
 //인가코드는 주소의 쿼리스트링에 담아져서 제공된다. 이걸 파싱해서 백엔드에게 전달
 import React from 'react';
@@ -22,9 +22,10 @@ const Redirection = () => {
         //백엔드로 인가코드 전달
         console.log(r.data); // 토큰과 함께 오는 정보 출력
 
-        // 토큰을 받아서 localStorage같은 곳에 저장하는 코드
+        // 토큰을 받아서 local&sessionStorage같은 곳에 저장하는 코드
         localStorage.setItem('accessToken', r.data.accessToken); // 일단 이름만 저장
         localStorage.setItem('refreshToken', r.data.refreshToken);
+        sessionStorage.setItem('accessToken', r.data.accessToken); // 일단 이름만 저장
         navigate('/');
       })
       .catch((error) => {

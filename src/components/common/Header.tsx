@@ -2,9 +2,35 @@ import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import SymbolLogo from '../../assets/SymbolLogo';
 import styled from 'styled-components';
+import { access } from 'fs';
+import API from '../../API/API';
 
 const Header = () => {
   const navigate = useNavigate();
+  const accessToken = localStorage.getItem('accessToken');
+  const logout = () => {
+    LogOut(); //api 호출
+    localStorage.clear();
+    sessionStorage.clear();
+    // eslint-disable-next-line no-alert
+    alert('로그아웃 되었습니다');
+    // window.location.reload();
+  };
+
+  // 로그아웃 API 호출
+  const LogOut = () => {
+    const response = API.postLogOut();
+    response
+      .then((res) => {
+        // eslint-disable-next-line no-console
+        console.log('complete LogOut : ', res);
+      })
+      .catch((error) => {
+        // eslint-disable-next-line no-console
+        console.log(error);
+      });
+  };
+
   return (
     <StyledHeaderContainer>
       <div role="button" onClick={() => navigate('/')}>
@@ -17,12 +43,20 @@ const Header = () => {
         </div>
       </StyledSearchBar>
       <StyledUserInfo>
-        <li>
-          <Link to="/loginPage">로그인</Link>
-        </li>
-        {/* <li>
-          <Link to="/">회원가입</Link>
-        </li> */}
+        {accessToken ? (
+          <>
+            <li>
+              <Link to="/mypage">마이페이지</Link>
+            </li>
+            <li onClick={logout}>
+              <Link to="/">로그아웃</Link>
+            </li>
+          </>
+        ) : (
+          <li>
+            <Link to="/loginPage">로그인</Link>
+          </li>
+        )}
       </StyledUserInfo>
     </StyledHeaderContainer>
   );
@@ -87,12 +121,15 @@ const StyledUserInfo = styled.ul`
   display: flex;
   position: relative;
   // top: 0px;
-  width: 20%;
+  // background-color: yellow;
+  width: 25%;
   font-size: 1.2rem;
   align-items: center;
   flex-wrap: wrap;
   & li {
-    margin: 0 0 0 25%;
+    display: flex;
+    // background-color: green;
+    margin: 0 0 0 15%;
     list-style: none;
   }
   @media screen and (max-width: 500px) {
