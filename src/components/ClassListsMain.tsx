@@ -25,7 +25,7 @@ const ClassListsMain = () => {
         console.log(response.data);
         setClassInfo(response.data);
       } else {
-        const response = await API.getLessons();
+        const response = await API.getNonloginLessons();
         console.log(response.data);
         setClassInfo(response.data);
       }
