@@ -1,5 +1,5 @@
 # TutorLink - front
-#### (230718 기준, 현재 진행 중인 프로젝트 입니다. 프론트엔드 레이아웃 작업 완료 by 다정)
+
 <p align="center">
  <img src="https://github.com/TeamTutorLink/TutorLink-front/assets/124070996/bdc1a70f-1951-4e82-a9d5-10327c3441ca"/>
   </p>
